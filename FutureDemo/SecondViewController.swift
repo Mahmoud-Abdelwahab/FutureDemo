@@ -10,8 +10,7 @@ import Combine
 
 class SecondViewController: UIViewController {
     
-    typealias FutureResult =  ((Result<String, Never>) -> Void)
-    var promise: FutureResult?
+   private(set) var welcomeMessagePublisher = PassthroughSubject<String,Never>()
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +18,7 @@ class SecondViewController: UIViewController {
 
     @IBAction func didTapSendValues(_ sender: Any) {
         dismiss(animated: true){
-            self.promise?(.success("Hello Futrue 😃"))
+            self.welcomeMessagePublisher.send("Hello Futrue 😃")
         }
     }
 }
