@@ -16,6 +16,8 @@
 		0B4B55F828D0BB3800352ED0 /* FutureDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B55F728D0BB3800352ED0 /* FutureDemoTests.swift */; };
 		0B4B560228D0BB3800352ED0 /* FutureDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B560128D0BB3800352ED0 /* FutureDemoUITests.swift */; };
 		0B4B560428D0BB3800352ED0 /* FutureDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B560328D0BB3800352ED0 /* FutureDemoUITestsLaunchTests.swift */; };
+		0B4B561228D0BB5E00352ED0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B561028D0BB5E00352ED0 /* SecondViewController.swift */; };
+		0B4B561328D0BB5E00352ED0 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4B561128D0BB5E00352ED0 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0B4B55FD28D0BB3800352ED0 /* FutureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FutureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4B560128D0BB3800352ED0 /* FutureDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureDemoUITests.swift; sourceTree = "<group>"; };
 		0B4B560328D0BB3800352ED0 /* FutureDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B4B561028D0BB5E00352ED0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0B4B561128D0BB5E00352ED0 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				0B4B55E928D0BB3700352ED0 /* Assets.xcassets */,
 				0B4B55EB28D0BB3800352ED0 /* LaunchScreen.storyboard */,
 				0B4B55EE28D0BB3800352ED0 /* Info.plist */,
+				0B4B561028D0BB5E00352ED0 /* SecondViewController.swift */,
+				0B4B561128D0BB5E00352ED0 /* SecondViewController.xib */,
 			);
 			path = FutureDemo;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4B561328D0BB5E00352ED0 /* SecondViewController.xib in Resources */,
 				0B4B55ED28D0BB3800352ED0 /* LaunchScreen.storyboard in Resources */,
 				0B4B55EA28D0BB3700352ED0 /* Assets.xcassets in Resources */,
 				0B4B55E828D0BB3600352ED0 /* Main.storyboard in Resources */,
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4B561228D0BB5E00352ED0 /* SecondViewController.swift in Sources */,
 				0B4B55E528D0BB3600352ED0 /* ViewController.swift in Sources */,
 				0B4B55E128D0BB3600352ED0 /* AppDelegate.swift in Sources */,
 				0B4B55E328D0BB3600352ED0 /* SceneDelegate.swift in Sources */,

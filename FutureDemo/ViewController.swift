@@ -6,14 +6,32 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
+    
+    var anyCancalableSet = Set<AnyCancellable>()
 
+    @IBOutlet weak var showWelcomMessageLable: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func didTapedShowVC(_ sender: Any) {
+        showSecondVC()
+            .compactMap({$0})
+            .assign(to: \.text, on: showWelcomMessageLable)
+            .store(in: &anyCancalableSet)
+        print( Thread.isMainThread)
+    }
+    
+    private func showSecondVC()-> AnyPublisher<String,Never> {
+       return Future { promise in
+           let secondVC = SecondViewController()
+           secondVC.promise = promise
+           self.present(secondVC, animated: true)
+       }
+       .eraseToAnyPublisher()
+    }
 }
 
